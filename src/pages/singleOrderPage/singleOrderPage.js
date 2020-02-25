@@ -13,7 +13,7 @@ import Orders from '../../helpers/orders'
 import ImageSlide from "../../components/ui/imageSlide/imageSlide";
 
 
-const SingleOrderPage = ({ match }) => {
+const SingleOrderPage = ({ match, history }) => {
     const { params : { id } } = match
     const links = [{
         text : 'Product details'
@@ -27,7 +27,7 @@ const SingleOrderPage = ({ match }) => {
         <Layout>
             <div className={styles.headerSection}>
                 <div className={styles.sectionOne}>
-                    <div className={styles.backGroup}>
+                    <div className={styles.backGroup} onClick={() => history.goBack()}>
                         <div className={styles.svgHolder}>
                             <RightArrow/>
                         </div>

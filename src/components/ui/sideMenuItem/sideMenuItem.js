@@ -53,7 +53,6 @@ const SideMenuItem = ({ svg: Svg, text, children, notifCount, open, openFunc, pa
         height: expanded ? '45px' : open ? '61px' : '40px',
         transform: expanded ? `translateY(${value}px)` : open ? `translate(0)` : "translate(-50%, -50%)",
     }
-    console.log("The back computed styles", backgroundComputedStyling)
 
 
 

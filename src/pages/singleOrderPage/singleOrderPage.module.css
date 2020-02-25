@@ -189,7 +189,7 @@
     height: 13px;
     width: 6px;
     border: 1px solid #ffffff;
-    transform: rotate(52deg);
+    transform: rotate(52deg) translate(-2px , -2px);
     border-top-color: transparent ;
     border-left-color: transparent;
 }

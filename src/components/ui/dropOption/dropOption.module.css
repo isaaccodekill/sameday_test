@@ -1,0 +1,22 @@
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #8e8e8e50;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+.option:last-of-type{
+    border: none;
+}
+
+.option svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+

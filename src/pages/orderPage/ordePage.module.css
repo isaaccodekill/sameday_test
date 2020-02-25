@@ -1,0 +1,53 @@
+.headerSection{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.sectionOne{
+    display: flex;
+    align-items: center;
+}
+
+.sectionOne h1{
+    font-size: 25px;
+    color: #030303;
+}
+
+.sectionOne svg{
+    fill: #007bff !important;
+    stroke: #007bff !important;
+    margin-right: 20px;
+}
+
+.sectionTwo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    min-width: 100px;
+}
+
+.outline{
+    border: 1px solid #939393;
+}
+
+.fill{
+    background-color: #d0d0d0;
+    color: #fcfcfc;
+}
+
+.orderGroup{
+
+}
+

@@ -1,0 +1,33 @@
+.Layout{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.mainContent{
+    z-index: 10;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 50px;
+    padding-top: 150px;
+    width: calc(100% - 65px);
+    margin-left: 65px;
+    transition: all 0.5s ease;
+    padding-bottom: 500px;
+    background-color: #FCFCFC;
+}
+
+.LayoutOpen .mainContent{
+    margin-left: 300px;
+    width: calc(100% - 300px);
+}

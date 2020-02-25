@@ -1,0 +1,31 @@
+.searchInput{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+.searchInput input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 15px;
+    min-width: 200px;
+    /*width: 100%;*/
+    /*max-width: 400px;*/
+}
+
+.searchInput svg{
+    fill: black;
+    height: 15px;
+    width: 15px;
+}
+
+.red{
+    fill: red !important;
+    cursor: pointer;
+    height: 20px;
+}
+

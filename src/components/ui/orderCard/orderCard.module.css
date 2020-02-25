@@ -1,0 +1,211 @@
+.orderCard{
+    display: flex;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 50px #007BFF10;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: bold;
+
+}
+
+.orderCard span{
+    font-size: 13px;
+    padding: 0 5px;
+}
+
+.HeaderType{
+    background-color: #EEEEEE;
+    padding: 20px 30px;
+    box-shadow: none;
+    cursor: default;
+}
+
+.HeaderType span{
+    color: black;
+}
+
+.orderCard:hover{
+    box-shadow: 0px 3px 50px #007BFF50;
+}
+
+.HeaderType:hover{
+    box-shadow: none !important;
+}
+
+
+.checkbox{
+    min-width: 30px;
+}
+
+.order, .item{
+    width: 120px;
+}
+
+.Details{
+    width: 300px;
+}
+
+.ImageBox{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ImageBox span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.ImageBox img{
+    object-fit: cover;
+    height: 50px;
+}
+
+.ImageBox svg{
+    fill: #8e8e8e;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.ImageBox:hover svg{
+    opacity: 1;
+}
+
+
+.colors{
+    width: 100px;
+}
+
+.qty{
+    width: 50px;
+}
+
+.printType{
+    width: 70px;
+}
+
+.rush{
+    display: flex;
+    color: #FF0000;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rush svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.delivery{
+    width: 100px;
+}
+
+.chill{
+    color: #196BD8;
+}
+
+.deliveryTime{
+    width: 170px;
+}
+
+
+.dateTime{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.date{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.timeLead{
+    color: #C1C1C1;
+}
+
+.greenTime{
+    color: #009B2A;
+}
+
+.prodStatus{
+    width: 90px;
+    color: #1E8406;
+    font-weight: bold;
+}
+.prodStatus > span{
+    display: flex;
+    padding: 0 !important;
+}
+
+.colorBlock{
+    height: 45px;
+    /*width: 100px;*/
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.slideContainer{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top left;
+    transition: all 0.5s ease;
+    background-color: red;
+    z-index: 50;
+}
+
+.ImageBox:hover .slideContainer{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.smallIconWrapper{
+    background-color: #1E8406;
+    height: 20px;
+    width: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 0 !important;
+}
+
+.checkMark{
+    height: 13px;
+    width: 6px;
+    border: 1px solid #ffffff;
+    transform: rotate(52deg);
+    border-top-color: transparent ;
+    border-left-color: transparent;
+    padding: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

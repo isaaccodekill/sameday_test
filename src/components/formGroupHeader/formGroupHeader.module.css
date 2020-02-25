@@ -1,0 +1,81 @@
+.formHeader{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.headerLinkGroup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.HeaderLink{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.5s ease;
+    border-right: 1px solid #8e8e8e50;
+}
+
+.HeaderLink span{
+    color: #1d1d1d;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.linkContainer:last-of-type .HeaderLink{
+    border-right: none;
+}
+
+.notifCount{
+    height: 17px;
+    width: 17px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #D80B0B;
+    color: white;
+    margin-left: 10px;
+    padding: 3px;
+
+/*    font helvetica*/
+}
+
+
+
+.linkContainer:hover span{
+    color: #007BFF;
+}
+
+.linkContainer:hover .notifCount{
+    background-color: transparent;
+    color: #9B9B9B;
+}
+
+.HeaderLinkActive{
+    border-bottom-color: #007bff;
+}
+
+.restOfContent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.linkContainer{
+    padding: 10px 0;
+    transition: all 0.5s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.linkContainer:hover{
+    border-bottom: 4px solid #007bff;
+}
+

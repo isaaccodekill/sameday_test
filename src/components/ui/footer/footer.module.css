@@ -1,0 +1,96 @@
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #F4F7F6;
+    position: absolute;
+    bottom: 0;
+    padding: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.Footer h2, .Footer h3{
+    color: #007BFF;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.Footer h2{
+    font-size: 20px;
+}
+
+.Footer h3{
+    font-size: 15px;
+}
+
+.appSection{
+    width: 25%;
+}
+
+.appStoreContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.iconWrapper{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.iconWrapper svg{
+    height: 20px;
+    width: 20px;
+}
+
+.plainText{
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.linkGroup{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkGroup a{
+    color: #0E58C4;
+    border-bottom: 1px solid #0E58C4;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.textSection{
+    width: 40%;
+}
+
+.socialSection{
+    width: 20%;
+}
+
+.socialGroup{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialGroup svg{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+

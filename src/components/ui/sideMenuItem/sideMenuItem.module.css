@@ -1,0 +1,224 @@
+.SideMenuItem{
+    overflow: hidden;
+    display: flex;
+    /*padding: 15px 0;*/
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SideMenuItem hr{
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0E58C4;
+    border: none;
+}
+
+.hideBar hr{
+    display: none;
+}
+
+.SideMenuItem > *{
+    z-index: 7;
+}
+
+.itemBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #CEE6FF;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 6;
+    transform-origin: left;
+}
+
+.SideMenuItem g, .SideMenuItem path{
+    stroke: white !important;
+}
+
+
+.active .itemBackground{
+    opacity: 1;
+}
+
+.SideMenuItem:hover .itemBackground {
+    opacity: 1;
+}
+
+/*.SideMenuItem:hover svg, .SideMenuItem:hover g{*/
+/*    fill: #196BD8 !important;*/
+/*    color: #196BD8;*/
+/*}*/
+
+.SideMenuItemActiveClass .textContainer{
+    color: #0E58C4 !important;
+}
+
+.SideMenuItemActiveClass g, .SideMenuIteActiveClass path{
+    stroke: #0E58C4 !important;
+}
+
+.mainLinkPart:hover g, .mainLinkPart:hover path{
+    stroke: #0E58C4 !important;
+}
+
+
+.mainLinkPart:hover span{
+    color: #196BD8;
+}
+
+.SideMenuItem svg{
+    height: 25px;
+    width: 25px;
+    margin: 0 20px;
+    fill: white;
+}
+
+.SideMenuItem:nth-child(1) path{
+    fill: transparent;
+}
+
+a.link:last-of-type path{
+    fill: #ffffff;
+}
+
+a.link:last-of-type:hover path{
+    fill: #0E58C4;
+}
+
+.SideMenuItem span{
+    color: white;
+    font-size: 15px;
+}
+
+a.link{
+    text-decoration: none;
+}
+
+a.link:last-of-type {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+a.link:last-of-type hr{
+    display: none;
+}
+
+.mainLinkPart{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/*.SideMenuItem:nth-child(7) hr{*/
+/*    display: none;*/
+/*}*/
+
+.innerLinks{
+    height: 0;
+    width: 100%;
+    transform: scaleY(0);
+    transition: all 0.5s ease;
+    transform-origin: top;
+}
+
+
+.textContainer{
+    width: 0;
+    transform: scale(0);
+}
+
+
+.textOpen{
+    width: calc(100% - 60px);
+    transform: scale(1);
+}
+
+.actualText{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.closed{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.childLink{
+    width: 100%;
+    padding-left: 65px;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px !important;
+}
+
+.childLink span{
+    font-size: 13px;
+}
+
+.smallLink{
+    text-decoration: none;
+    position: relative;
+}
+
+.childLink::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #CEE6FF;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 6;
+}
+
+.childLink:hover .childLink::after{
+    opacity: 1;
+}
+
+.activeSmallLinky::after{
+    opacity: 1;
+}
+
+.notifCount{
+    background-color: red;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.actualText svg{
+    fill: #fff;
+    height: 20px;
+    width: 20px;
+}
+

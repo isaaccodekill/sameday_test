@@ -1,0 +1,268 @@
+.headerSection{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.sectionOne{
+    display: flex;
+    align-items: center;
+}
+
+.productionSvgGroup{
+    display: flex;
+    align-items: center;
+}
+
+.productionSvgGroup h1{
+    font-size: 25px;
+    color: #030303;
+}
+
+.productionSvgGroup svg{
+    fill: #007bff !important;
+    stroke: #007bff !important;
+    margin-right: 20px;
+}
+
+.backGroup{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.backGroup span{
+    margin-left: 15px;
+    color: #8e8e8e;
+    border-right: 1px solid #8e8e8e50;
+    padding-right: 20px;
+}
+
+.svgHolder{
+    height: 45px;
+    width: 45px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svgHolder svg{
+    fill: white !important;
+    stroke: #fff !important;
+    height: 25px;
+    width: 25px;
+}
+
+.secondHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexLeft h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.flexLeft p{
+    color: #007bff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.flexRight{
+    display: flex;
+    align-items: center;
+}
+
+.textGroupLead{
+    font-size: 20px;
+    color: #007bff;
+
+}
+
+.textGroupText{
+    margin-left: 15px;
+    color: #1E8406;
+}
+
+.mainCard{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  0px 3px 50px #0000000F;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.cardSection{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cardSection svg{
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.cardTextGroup{
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.cardSection:last-of-type .cardSection{
+    border: none;
+}
+
+
+.cardTextGroup p{
+    margin-bottom: 10px;
+    color: #1A3A54;
+}
+
+
+.cardTextGroup span.value{
+    display: flex;
+    align-items: center;
+    color: #007bff;
+
+}
+
+.noPadding div{
+    padding: 0;
+}
+
+.dateGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.date{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.timeGroup{
+    display: flex;
+}
+
+.timeLead{
+    color: #C1C1C1 !important;
+}
+
+.time{
+    color: #009B2A !important;
+    margin-left: 10px;
+}
+
+.line{
+    height: 25px;
+    background-color: #8e8e8e50;
+    width: 1px;
+    /*margin-left: 10px;*/
+    margin-right: 15px;
+}
+
+.smallIconWrapper{
+    background-color: #1E8406;
+    height: 20px;
+    width: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.checkMark{
+    height: 13px;
+    width: 6px;
+    border: 1px solid #ffffff;
+    transform: rotate(52deg);
+    border-top-color: transparent ;
+    border-left-color: transparent;
+}
+
+.orderMainSection{
+    margin-top: 50px;
+    box-shadow: 0px 3px 50px #00000007;
+    padding-top: 30px;
+    background-color: white;
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    min-width: 100px;
+    margin: 0 7.5px;
+}
+
+.btnOutline{
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #007bff;
+    min-width: 100px;
+    margin: 0 7.5px;
+    border: 1px solid #007BFF;
+
+}
+
+.btn svg{
+    height: 14px;
+    width: 14px;
+}
+
+.outline{
+    border: 1px solid #939393;
+}
+
+.fill{
+    background-color: #d0d0d0;
+    color: #fcfcfc;
+}
+
+.miniBanner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    margin-top: 50px;
+    background-color: #EEEEEE;
+}
+
+.miniBanner h2{
+    font-size: 23px;
+}
+
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: #8e8e8e50;
+    border: none;
+}
+
+
+
+

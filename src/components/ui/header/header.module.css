@@ -1,0 +1,129 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: fixed;
+    box-shadow: 0 3px 50px #1877FF1C;
+    padding: 20px 15px;
+    overflow: hidden;
+    top: 0;
+    z-index: 100;
+    width: calc(100% - 65px);
+    left: 65px;
+    transition: all 0.5s ease;
+    background-color: white;
+
+}
+
+.openHeader{
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+.Logo{
+    height: 40px;
+    width: 180px;
+}
+
+.HeaderNavItems{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.guitarPick{
+    background-color: #4b4b4b;
+    height: 9px;
+    width: 9px;
+    margin: 5px;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    transform: rotate(-45deg) translate(5px, 2px);
+    border-radius: 3px;
+}
+
+.column{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100% !important;
+    border: none !important;
+}
+
+.column span{
+    margin-left: 0 !important;
+}
+
+.specialMenu{
+    width: 25px;
+    /*height: 15px;*/
+    /*background: red;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.menuGroup{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.circle{
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: #707070;
+    margin-right: 3px;
+}
+
+.rectangle {
+    background-color: #707070;
+    width: calc(100% - 5px);
+    height: 3px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+
+.menuGroup:nth-of-type(2)  .rectangle{
+    width: calc(100% - 13px);
+}
+
+.search{
+    transition: all 0.5s ease;
+    transition-delay: 300ms;
+}
+
+.search input{
+    width: 0;
+    color: #707070;
+    font-size: 13px;
+    margin-left: 10px;
+    border: none;
+    transition: all  0.5s ease;
+    transition-delay: 300ms;
+    outline: none;
+    transform: scaleX(0);
+}
+
+
+.search:hover{
+    border-bottom: 1px solid #707070;
+    border-right: none;
+    border-left: none !important;
+}
+
+.search:hover input{
+    width: 150px;
+    transform: scaleX(1);
+
+}
+
+.flexGroup{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+

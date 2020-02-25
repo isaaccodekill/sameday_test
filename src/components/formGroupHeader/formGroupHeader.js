@@ -6,8 +6,8 @@ const FormGroupHeader = ({ linkables, activeLinkable, children }) => {
         <div className={styles.formHeader}>
             <div className={styles.headerLinkGroup}>
                 {
-                    linkables.map(link => (
-                        <div className={styles.linkContainer}>
+                    linkables.map((link, i) => (
+                        <div className={ (i === 0) ? [styles.linkContainer, styles.activeContainer].join(' ') : styles.linkContainer}>
                             <div className={styles.HeaderLink}>
                                 <span>{link.text}</span>
                                 {link.notifCount ? <div className={styles.notifCount}>

@@ -6,6 +6,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .SideMenuItem hr{
@@ -214,11 +215,34 @@ a.link:last-of-type hr{
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    transform: translateX(-30px);
 }
 
 .actualText svg{
     fill: #fff;
     height: 20px;
     width: 20px;
+}
+
+
+
+.special svg{
+    fill: #0E58C4 !important;
+    stroke: #0E58C4 !important;
+}
+
+.notifCountAbs{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    transform: translateX(0);
+}
+
+.childLink .notifCount{
+    transform: translateX(0);
+}
+
+.preventHover:hover span{
+    color: #fff !important;
 }
 

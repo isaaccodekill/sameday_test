@@ -72,19 +72,20 @@ const SideMenuItem = ({ svg: Svg, text, children, notifCount, open, openFunc, pa
                                 <span> { text } </span>
                                 { children ? <div className={styles.guitarPick}/> : null }
                         </div>
+                        { notifCount ? <div className={ !open ? [styles.notifCount, styles.notifCountAbs].join(' ') : styles.notifCount}> {notifCount} </div> : null }
                     </div>
                     <hr/>
                 </div>
             {/*  url match and !expand then your color should be blue  so also should your svg */}
             </NavLink> : <div className={open ? urlMatch && (expanded === false) ? [styles.SideMenuItem, styles.hideBar, styles.SideMenuItemActiveClass].join(' ') : [styles.SideMenuItem, styles.hideBar].join(' ') :
-                (urlMatch && (expanded === false)) ? [styles.SideMenuItem, styles.SideMenuItemActiveClass].join(' ') : styles.SideMenuItem}  onClick={ children ? () => openFuncFinal() : () => {} }>
+                (urlMatch && (expanded === false)) ? [styles.SideMenuItem, styles.SideMenuItemActiveClass].join(' ') :  styles.SideMenuItem}  onClick={ children ? () => openFuncFinal() : () => {} }>
                 <div className={backgroundClasses.join(' ')} style={ backgroundComputedStyling }/>
-                <div className={styles.mainLinkPart}>
+                <div className={ (!expanded && open && urlMatch) ? [styles.mainLinkPart , styles.special].join(' ') : (!urlMatch) ? [styles.mainLinkPart, styles.preventHover].join(' ') : styles.mainLinkPart}>
                     <Svg/>
                     <div className={textClasses.join(' ')}>
                         <div className={styles.actualText}>
-                            <span> { text } </span>
-                            { children ? <Drop/> : null }
+                            <span style={(open && !expanded && urlMatch) ? { color: "#0E58C4" } :  (expanded) ? { color: "#fff" } : null}> { text } </span>
+                            { children ? <Drop style={(open && !expanded && urlMatch) ? { fill: "#0E58C4" } : null} /> : null }
                         </div>
                     </div>
                 </div>

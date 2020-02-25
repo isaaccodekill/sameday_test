@@ -11,7 +11,7 @@ const DropDown = ({ color, backgroundColor, changeFunction, options, defaultOpti
     const [open, setOpen] = useState(false)
     const [selectedOption, setSelectedOption] = useState(defaultOption)
     const choseOption = (optionPicked) => {
-        setSelectedOption(optionPicked)
+        setSelectedOption(optionPicked.text)
         setOpen(false)
     }
 

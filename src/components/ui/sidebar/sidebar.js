@@ -27,9 +27,9 @@ const Sidebar = ({ open, setOpen }) => {
                     { name: "Bids", notifCount: 1, urlTarget: "/Operations/Bids" },
                     {name: "Promotion / Discount", urlTarget: "/Operations/Promotion"}, {name: "Outsourcing", urlTarget: "O/perations/Out-sourcing"}]}>
                 </SideMenuItem>
-                <SideMenuItem path="/Records" open={open} openFunc={setOpen} svg={Record} text={"Records"}/>
+                <SideMenuItem path="/Records" open={open} openFunc={setOpen} svg={Record} text={"Records"} notifCount={1}/>
                 <SideMenuItem path="/SupplyStore" open={open} openFunc={setOpen} svg={Supply} text={"Supply Store"}/>
-                <SideMenuItem path="/MarketPlace" open={open} openFunc={setOpen} svg={Market} text={"Market place"}/>
+                <SideMenuItem path="/MarketPlace" open={open} openFunc={setOpen} svg={Market} text={"Market place"} notifCount={1}/>
                 <SideMenuItem path="/Forums" open={open} openFunc={setOpen} svg={Forums} text={"Forums"}/>
                 <SideMenuItem path="/Settings"  open={open} openFunc={setOpen} svg={Settings} text={"Settings"}/>
             </div>

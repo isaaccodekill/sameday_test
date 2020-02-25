@@ -31,6 +31,7 @@
     border-right: none;
 }
 
+
 .notifCount{
     height: 17px;
     width: 17px;
@@ -77,5 +78,19 @@
 
 .linkContainer:hover{
     border-bottom: 4px solid #007bff;
+}
+
+
+.activeContainer{
+    border-bottom: 4px solid #007bff;
+}
+
+.activeContainer span{
+    color: #007BFF;
+}
+
+.activeContainer .notifCount{
+    background-color: transparent;
+    color: #9B9B9B;
 }
 
